@@ -26,7 +26,7 @@ public class Coffee {
     }
 
     public static void buy(){
-        System.out.println("Lütfen içmek istediginiz kahvenin numarasini giriniz.\n \n 1. Espresso (20 tl)\n 2. Double Espresso (29 tl)\n 3. Cappuccino (27 tl)\n 4. Caffe Latte (27 tl)\n 5. Mocha (32 tl)\n 6. Americano (25 tl)\n 7. Hot Water (5 tl)");
+        System.out.println("Lütfen içmek istediginiz kahvenin numarasini giriniz.\n \n 1. Espresso (" + String.valueOf(new Espresso().getMoney()) + " tl)\n 2. Double Espresso (" + String.valueOf(new DoubleEspresso().getMoney()) + " tl)\n 3. Cappuccino (" + String.valueOf(new Cappuccino().getMoney()) + " tl)\n 4. Caffe Latte (" + String.valueOf(new CaffeLatte().getMoney()) + " tl)\n 5. Mocha (" + String.valueOf(new Mocha().getMoney()) + " tl)\n 6. Americano (" + String.valueOf(new Americano().getMoney()) + " tl)\n 7. Hot Water (" + String.valueOf(new HotWater().getMoney()) + " tl)");
         String inputValue = scanner.nextLine();
 
         switch(inputValue){
