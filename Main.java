@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CoffeeMachineApp coffee_machine = new CoffeeMachineApp();
+        Coffee coffee = new Coffee();
 
-        coffee_machine.buy();
+        coffee.buy();
 
     }
 }
